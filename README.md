@@ -17,3 +17,14 @@
 
 ## Installing git
 1. Go to your home directory and create and directory called tmp. cd to tmp and download the git 2.3.3 tarball using ```wget --no-check-certificate https://www.kernel.org/pub/software/scm/git/git-2.3.3.tar.gz```
+2. Untar using ```tar xfvz git-2.3.3.tar.gz``` and cd to git-2.3.3.
+3. Run `make` and then run `make install`
+4. Git is installed in `$HOME/bin` by default. So add that to your environment variable in `.tcsh`. 
+5. Also, you'll need to turn off SSL Verification to be able to run git so add `alias git "env GIT_SSL_NO_VERIFY=true git"` to your `.tcshrc`. 
+6. At this point, your `.tcshrc` should look as follows:
+```
+set path= ($path /share/rkrish11/miniconda/bin/ $home/bin/)
+alias git "env GIT_SSL_NO_VERIFY=true git"
+alias python "python2.7"
+```
+7. Log out and log back in and you're all set.
