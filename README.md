@@ -31,4 +31,9 @@ Log out and log back in and you're all set.
 
 # Submitting Jobs
 1. As an example, I'll use my [run.py](https://github.com/ai-se/Transfer-Learning/blob/master/SOURCE/run.py) file. On an ordinary unix system, you would have to execute `$ python run.py _test ant > log/ant.py` to get it going.
-2. To run this on the cluster use `bsub -W 60 -n 4 -o ./out/out.%J -e ./err/err.%J python run.py _test $1 > log/$1.log`
+2. To run this on the cluster use 
+`bsub -W 60 -n 4 -o ./out/out.%J -e ./err/err.%J python run.py _test $1 > log/$1.log`
+- "-W 5" asks for five minutes of time. The job will time out after five minutes if still running.
+- "-n 4" asks for 4 processors.
+- "-o pmonte.out.%J" denotes a file where standard output from the job will be saved.
+- The "-e" line designates a file where standard error output from the job will be saved.
