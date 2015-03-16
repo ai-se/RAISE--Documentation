@@ -47,5 +47,4 @@ rm out/*
 foreach VAR ("ant" "camel" "forrest" "ivy" "jedit" "pbeans" "log4j" "synapse" "velocity" "xalan" "xerces")
   bsub -W 6000 -n 4 -o ./out/$VAR.out.%J -e ./err/$VAR.err.%J python run.py _test "$VAR" > log/"$VAR".log
 end
-[rkrish11@login02 SOURCE]$
 ```
