@@ -38,8 +38,8 @@ Log out and log back in and you're all set.
   - "-o pmonte.out.%J" denotes a file where standard output from the job will be saved.
   - The "-e" line designates a file where standard error output from the job will be saved.
 
-### Muyltiple Jobs 
-To submit multiple jobs, like in my case with 12 more projects like ant. Use SHELL scripts to run your job. Create a master shell script as follows
+### Multiple Jobs 
+To submit multiple jobs, like in my case with 12 more projects like ant, use SHELL scripts to run your job. Create a master shell script as follows and just run that..
 ```shell
 #! /bin/tcsh
 
