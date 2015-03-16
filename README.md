@@ -8,12 +8,10 @@
   and install it ```bash Miniconda-latest-Linux-x86_64.sh```. __Note: You've gotta install this in your share space. Watch out for the part during the installation when it asks where to install this, say `./miniconda` instead on the default which is `~/miniconda`__
 4. These Miniconda installers contain the 'conda' package manager. Once Miniconda is installed, you can use the conda command to install any other packages and create environments, etc. But to do this you must export this to your path.
 
-### Add Miniconda to your path
+### Add Miniconda to your path and installing python packages using `conda`
 1. Go back to home directory; create a file called `.tcshrc`; 
    Add this line to the file:
    ```set path= ($path /share/rkrish11/miniconda/bin/ $home/bin/)```
 2. An optional (but strogly recommended) step would be to create an alias for python2.7 by adding the following lines to .tcshrc `alias python "python2.7"`
-
-### Installing python packages using `conda`
-1. Logout and log back if you already haven't done so.
+3. Logout and log back if you already haven't done so. Now you should be able to install all the packages using `conda install <package-name>`
 
