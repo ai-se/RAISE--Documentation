@@ -12,4 +12,5 @@
 1. Go back to home directory; create a file called `.tcshrc`; 
    Add this line to the file:
    ```set path= ($path /share/rkrish11/miniconda/bin/ $home/bin/)```
+2. An optional (but strogly recommended) step would be to create an alias for python2.7 by adding the following lines to .tcshrc `alias python "python2.7"`
 
