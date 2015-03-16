@@ -32,8 +32,24 @@ Log out and log back in and you're all set.
 # Submitting Jobs
 1. As an example, I'll use my [run.py](https://github.com/ai-se/Transfer-Learning/blob/master/SOURCE/run.py) file. On an ordinary unix system, you would have to execute `$ python run.py _test ant > log/ant.py` to get it going.
 2. To run this on the cluster use 
-`bsub -W 60 -n 4 -o ./out/out.%J -e ./err/err.%J python run.py _test $1 > log/$1.log`
+`bsub -W 60 -n 4 -o ./out/out.%J -e ./err/err.%J python run.py _test ant > log/ant.log`
   - "-W 5" asks for five minutes of time. The job will time out after five minutes if still running.
   - "-n 4" asks for 4 processors.
   - "-o pmonte.out.%J" denotes a file where standard output from the job will be saved.
   - The "-e" line designates a file where standard error output from the job will be saved.
+### Muyltiple Jobs 
+To submit multiple jobs, like in my case with 12 more projects like ant. Use SHELL scripts to run your job. Create a master shell script as follows
+```
+#! /bin/tcsh
+#BSUB -W 6000
+#BSUB -n 4
+#BSUB -o ./out.%J
+#BSUB -e ./err.%J
+rm err/*
+rm out/*
+# foreach VAR ("ant" "camel" "forrest" "ivy" "jedit" "pbeans" "log4j" "synapse" "velocity" "xalan" "xerces")
+foreach VAR ("poi" "lucene " "synapse")
+  bsub -W 6000 -n 4 -o ./out/$VAR.out.%J -e ./err/$VAR.err.%J tcsh save "$VAR"
+end
+[rkrish11@login02 SOURCE]$
+```
