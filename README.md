@@ -30,4 +30,4 @@ alias python "python2.7"
 Log out and log back in and you're all set.
 
 # Submitting Jobs
-As an example, I'll use my [run.py]() file  
+As an example, I'll use my [run.py](https://github.com/ai-se/Transfer-Learning/blob/master/SOURCE/run.py) file. On an ordinary unix system, you would have to execute `$ python run.py _test ant > log/ant.py` to get it going.
