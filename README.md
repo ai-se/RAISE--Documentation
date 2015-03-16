@@ -39,7 +39,7 @@ Log out and log back in and you're all set.
   - The "-e" line designates a file where standard error output from the job will be saved.
 ### Muyltiple Jobs 
 To submit multiple jobs, like in my case with 12 more projects like ant. Use SHELL scripts to run your job. Create a master shell script as follows
-```
+```shell
 #! /bin/tcsh
 #BSUB -W 6000
 #BSUB -n 4
