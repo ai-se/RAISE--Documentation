@@ -1,4 +1,4 @@
-# A Quick guide to Setting Up the HPC Clusters
+# A Quick Guide to Setting Up The HPCC Clusters
 ## Installing Python2.7: 
 1. Login to the HPC cluster using ```ssh -X rkrish11@login64.hpc.ncsu.edu```
 2. Navigate to `/share` (or `/share2` or `/share3`) and create a folder. __Note: Use your unity ID as the directory name to avoid filename conflicts.__
