@@ -22,9 +22,9 @@
 4. Git is installed in `$HOME/bin` by default. So add that to your environment variable in `.tcsh`. 
 5. Also, you'll need to turn off SSL Verification to be able to run git so add `alias git "env GIT_SSL_NO_VERIFY=true git"` to your `.tcshrc`. 
 6. At this point, your `.tcshrc` should look as follows:
-```
-set path= ($path /share/rkrish11/miniconda/bin/ $home/bin/)
-alias git "env GIT_SSL_NO_VERIFY=true git"
-alias python "python2.7"
-```
+  ```
+  set path= ($path /share/rkrish11/miniconda/bin/ $home/bin/)
+  alias git "env GIT_SSL_NO_VERIFY=true git"
+  alias python "python2.7"
+  ```
 7. Log out and log back in and you're all set.
