@@ -1,4 +1,4 @@
-# A Quick guide to using our HPC Clusters
+# A Quick guide to Setting Up the HPC Clusters
 ## Installing Python2.7: 
 1. Login to the HPC cluster using ```ssh -X rkrish11@login64.hpc.ncsu.edu```
 2. Navigate to `/share` (or `/share2` or `/share3`) and create a folder. __Note: Use your unity ID as the directory name to avoid filename conflicts.__
@@ -28,3 +28,6 @@ alias git "env GIT_SSL_NO_VERIFY=true git"
 alias python "python2.7"
 ```
 Log out and log back in and you're all set.
+
+# Submitting Jobs
+As an example, I'll use my [run.py]() file  
