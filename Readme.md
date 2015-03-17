@@ -31,11 +31,12 @@ Log out and log back in and you're all set.
 # Submitting Jobs
 1. As an example, I'll use my [run.py](https://github.com/ai-se/Transfer-Learning/blob/master/SOURCE/run.py) file. On an ordinary unix system, you would have to execute `$ python run.py _test ant > log/ant.py` to get it going.
 2. To run this on the cluster use 
-`bsub -W 60 -n 4 -o ./out/out.%J -e ./err/err.%J python run.py _test ant > log/ant.log`
-  - "-W 60" asks for sixty minutes of time. The job will time out after five minutes if still running.
+`bsub -W 6000 -n 4 -o ./out/out.%J -e ./err/err.%J python run.py _test ant > log/ant.log`
+  - "-W 6000" asks for six thousand minutes of time. The job will time out after 100 hours if still running.
   - "-n 4" asks for 4 processors.
-  - "-o pmonte.out.%J" denotes a file where standard output from the job will be saved.
+  - "-o ./out/out.%J" denotes a file where standard output from the job will be saved.
   - The "-e" line designates a file where standard error output from the job will be saved.
+  - %J by the way assigns a unique process ID for the job. Use this to keep track of stuff.
 
 ### Multiple Jobs 
 To submit multiple jobs, like in my case with 12 more projects like ant, use SHELL scripts to run your job. Create a master shell script as follows and just run that..
