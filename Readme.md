@@ -12,7 +12,7 @@
    Add this line to the file:
    ```set path= ($path /share/<unity-id>/miniconda/bin/ $home/bin/)```
 2. An optional (but strogly recommended) step would be to create an alias for python2.7 by adding the following lines to .tcshrc `alias python "python2.7"` so when you call python, it calls the one used by miniconda.
-3. Logout and log back if you already haven't done so. Now you should be able to install all the packages using `conda install <package-name>`
+3. Logout and log back if you haven't already done so. Now you should be able to install all the packages using `conda install <package-name>`
 
 ## Installing git
 1. Go to your home directory and create and directory called tmp. cd to tmp and download the git 2.3.3 tarball using ```wget --no-check-certificate https://www.kernel.org/pub/software/scm/git/git-2.3.3.tar.gz```
