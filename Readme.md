@@ -50,7 +50,7 @@ end
 ```
 
 ## If you plan on using vim
-Create a .vimrc file in at $HOME. Paste the following to make it pretty.
+Create a .vimrc file in at the $HOME direction. Paste the following script to make it pretty (and useable).
 
 ```shell
 " " Automatic reloading of .vimrc" 
