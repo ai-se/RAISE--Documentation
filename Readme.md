@@ -4,7 +4,7 @@
 2. Navigate to `/share` (or `/share2` or `/share3`) and create a folder. __Note: Use your unity ID as the directory name to avoid filename conflicts.__
 3. Now go into your folder and download the latest version of [miniconda](http://conda.pydata.org/miniconda.html): 
   ```wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh```
-  and install it ```bash Miniconda-latest-Linux-x86_64.sh```. __Note: You've gotta install this in your share space. Do not, I repeat, DO NOT install this in your $HOME directory. You will run out of disk space. Watch out for the part during the installation when it asks where to install this, say `./miniconda` instead on the default which is `/home/<unity-id>/miniconda` (see figure below)__
+  and install it ```bash Miniconda-latest-Linux-x86_64.sh```. __Note: You've gotta install this in your share space. Do not, I repeat, DO NOT install this in your $HOME directory. You will run out of disk space. Watch out for the part during the installation when it asks where to install this, say `./miniconda` (or '/share/<your-unity-id>/miniconda')instead on the default which is `/home/<unity-id>/miniconda` (see figure below)__
 
   ![](_imgs/where2install.png)
 
