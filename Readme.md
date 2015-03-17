@@ -43,8 +43,8 @@ To submit multiple jobs, like in my case with 12 more projects like ant, use SHE
 ```shell
 #! /bin/tcsh
 
-rm err/*
-rm out/*
+rm err/* # Flush error logs
+rm out/* # Flush output logs
 foreach VAR ("ant" "camel" "forrest" "ivy" "jedit" "pbeans" "log4j" "synapse" "velocity" "xalan" "xerces")
   bsub -W 6000 -n 4 -o ./out/$VAR.out.%J -e ./err/$VAR.err.%J python run.py _test "$VAR" > log/"$VAR".log
 end
