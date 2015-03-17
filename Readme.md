@@ -24,12 +24,12 @@
 4. Git is installed in `$HOME/bin` by default. So add that to your environment variable in `.tcshrc`. 
 5. Also, you'll need to turn off SSL Verification to be able to run git so add `alias git "env GIT_SSL_NO_VERIFY=true git"` to your `.tcshrc`. 
 6. At this point, your `.tcshrc` should look as follows:
-```
-set path= ($path /share/<unity-id>/miniconda/bin/ $home/bin/)
-alias git "env GIT_SSL_NO_VERIFY=true git"
-alias python "python2.7"
-```
-Log out and log back in and you're all set.
+  ```
+  set path= ($path /share/<unity-id>/miniconda/bin/ $home/bin/)
+  alias git "env GIT_SSL_NO_VERIFY=true git"
+  alias python "python2.7"
+  ```
+7. Log out and log back in and you're all set.
 
 # Submitting Jobs
 1. As an example, I'll use my [run.py](https://github.com/ai-se/Transfer-Learning/blob/master/SOURCE/run.py) file. On an ordinary unix system, you would have to execute `$ python run.py _test ant > log/ant.py` to get it going.
