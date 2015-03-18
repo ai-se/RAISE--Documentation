@@ -61,8 +61,9 @@ Why, yes of course! There are ways you can submit/monitor/kill your jobs on-the-
  - Setup VPN if using from outside campus (see [here](http://oit.ncsu.edu/data-network/vpn-installation-instructions-android-devices))
  - Install [JuiceSSH](https://play.google.com/store/apps/details?id=com.sonelli.juicessh)
  - Go to connections.
-      ![](https://lh3.ggpht.com/86E2tjG3xFJPkuiHT53tJ-QQxKMzW3xcWAfGkVt80leVvh-yPMgdbSgp3ScO_bPzFAwe=h900-rw)
 
+    ![](https://lh3.ggpht.com/86E2tjG3xFJPkuiHT53tJ-QQxKMzW3xcWAfGkVt80leVvh-yPMgdbSgp3ScO_bPzFAwe=h900-rw)
+ 
  - Fill in the credentials and you should be good to go.
     ```
     Address: login64.hpc.ncsu.edu
