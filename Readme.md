@@ -55,6 +55,19 @@ foreach VAR ("ant" "camel" "forrest" "ivy" "jedit" "pbeans" "log4j" "synapse" "v
 end
 ```
 
+## So, can it get any more geeky?
+Why, yes of course! There are ways you can submit/monitor/kill your jobs on-the-fly using your smartphone and (or) tablet. While on campus, just install the apps listed below and you should be good to go. When not on campus, install and run the VPN service before using the apps (a detailed instruction on setting up your vpn is available [here](http://oit.ncsu.edu/data-network/ncsu-ssl-vpn-instructions)). Needless to say, the same goes for other devices operated outside NCSU.
+### Android
+ - Setup VPN if using from outside campus (see [here](http://oit.ncsu.edu/data-network/vpn-installation-instructions-android-devices))
+ - Install [JuiceSSH](https://play.google.com/store/apps/details?id=com.sonelli.juicessh)
+ - Go to connections, add all your details and you are set.
+    ![](https://lh3.ggpht.com/86E2tjG3xFJPkuiHT53tJ-QQxKMzW3xcWAfGkVt80leVvh-yPMgdbSgp3ScO_bPzFAwe=h900-rw)
+
+### iOS
+ - Again, VPN
+ - Install [Serverauditor](https://itunes.apple.com/us/app/serverauditor-ssh-shell-console/id549039908?mt=8)
+
+
 ## If you plan on using vim
 Create a .vimrc file in at the $HOME direction. Paste the following script to make it pretty (and useable).
 
