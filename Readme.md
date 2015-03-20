@@ -63,7 +63,7 @@ Why, yes of course! There are ways you can submit/monitor/kill your jobs on-the-
  - Install [JuiceSSH](https://play.google.com/store/apps/details?id=com.sonelli.juicessh)
  - Go to connections.
 
-    <img src="https://lh3.ggpht.com/86E2tjG3xFJPkuiHT53tJ-QQxKMzW3xcWAfGkVt80leVvh-yPMgdbSgp3ScO_bPzFAwe=h900-rw">
+    <img src="https://lh3.ggpht.com/86E2tjG3xFJPkuiHT53tJ-QQxKMzW3xcWAfGkVt80leVvh-yPMgdbSgp3ScO_bPzFAwe=h900-rw" width = 300px height = 500px>
  
  - Fill in the credentials and you should be good to go.
     ```
