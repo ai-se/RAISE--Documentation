@@ -9,18 +9,6 @@
   ![](_imgs/where2install.png)
 
 4. These Miniconda installers contain the 'conda' package manager. Once Miniconda is installed, you can use the conda command to install any other packages and create environments, etc. But to do this you must export this to your path.
-5. NOTE: If you had entered "yes" when prompted to add to PATH, execute the following commands <br/>
-  ```
-  > bash 
-  
-  > source ~/.bashrc
-  ```
-  If you had entered "no", execute the following commands <br/>
-  ```
-  > bash
-  
-  > export PATH=$PATH:/share/<unity-id>/miniconda/bin
-  ```
 
 ### Adding Miniconda to your path and installing python packages using `conda`
 1. Go back to home directory; create a file called `.tcshrc`; 
