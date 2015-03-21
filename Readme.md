@@ -8,7 +8,7 @@
 
   ![](_imgs/where2install.png)
 
-4. These Miniconda installers contain the 'conda' package manager. Once Miniconda is installed, you can use the conda command to install any other packages and create environments, etc. But to do this you must export this to your path.
+4. These Miniconda installers contain the 'conda' package manager. Once Miniconda is installed, you can use the conda command to install any other packages and create environments, etc. But to do this you must export this to your path. Delete the shell script to save space after installation.
 
 ### Adding Miniconda to your path and installing python packages using `conda`
 1. Go back to home directory; create a file called `.tcshrc`; 
