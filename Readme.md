@@ -1,6 +1,6 @@
 # A Quick Guide to Setting Up The HPCC Clusters
 ## Installing Python2.7: 
-1. Login to the HPC cluster using ```ssh -X <unity-id>@login64.hpc.ncsu.edu```
+1. Login to the HPC cluster using ```ssh -X <unity-id>@login71.hpc.ncsu.edu```
 2. Navigate to `/share` (or `/share2` or `/share3`) and create a folder. __Note: Use your unity ID as the directory name to avoid filename conflicts.__
 3. Now go into your folder and download the latest version of [miniconda](http://conda.pydata.org/miniconda.html): 
   ```wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh```
