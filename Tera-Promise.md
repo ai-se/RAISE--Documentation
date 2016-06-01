@@ -10,3 +10,4 @@ Terapromise runs on a Windows 2012 server.
 + To login, use the following credentials:
 
   ![image](https://cloud.githubusercontent.com/assets/1433964/15725680/fe11488c-281a-11e6-88a5-c0e55cbfb657.png)
++ VisualSVN has been installed on the server, to manage the repo, use VisualSVN server.
