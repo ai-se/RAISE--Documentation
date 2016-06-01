@@ -1,6 +1,6 @@
-# 1. Server Management
+# Server Management
 
 
 *Note: This documentation is only for openscience curators.*
 
-## Accessing the server
+## 1. Accessing the server
