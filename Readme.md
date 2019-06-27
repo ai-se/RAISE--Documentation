@@ -3,8 +3,8 @@
 1. Login to the HPC cluster using ```ssh -X <unity-id>@login01.hpc.ncsu.edu```
 2. Navigate to `/share`, then into your faculty folder name, and create a folder. __Note: Use your unity ID as the directory name to avoid filename conflicts.__
 3. Now go into your folder and download the latest version of [miniconda](http://conda.pydata.org/miniconda.html): 
-  ```wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh```
-  and install it ```bash Miniconda-latest-Linux-x86_64.sh```. __Note: You've gotta install this in your share space. Do not, I repeat, DO NOT install this in your $HOME directory. You will run out of disk space. Watch out for the part during the installation when it asks where to install this, say `./miniconda` (or `/share/<your-unity-id>/miniconda`)instead on the default which is `/home/<unity-id>/miniconda` (see figure below)__
+  ```wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh``` for python2.7 or ```wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh``` for python 3.6
+  and install it ```bash Miniconda-latest-Linux-x86_64.sh```/```bash Miniconda3-latest-Linux-x86_64.sh```. __Note: You've gotta install this in your share space. Do not, I repeat, DO NOT install this in your $HOME directory. You will run out of disk space. Watch out for the part during the installation when it asks where to install this, say `./miniconda` (or `/share/<your-unity-id>/miniconda`)instead on the default which is `/home/<unity-id>/miniconda` (see figure below)__
 
   ![](_imgs/where2install.png)
 
