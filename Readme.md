@@ -36,7 +36,26 @@
 # Submitting Jobs
 1. As an example, I'll use my [run.py](https://github.com/ai-se/Transfer-Learning/blob/master/SOURCE/run.py) file. On an ordinary unix system, you would have to execute `$ python run.py _test ant > log/ant.py` to get it going.
 2. Create 2 directories `out`(for outputs) and `err`(to store the error logs). 
-3. To run this on the cluster use 
+3. To run this on the cluster create a bsub script as - 
+
+`#!/bin/csh
+
+ #BSUB -W 10
+ 
+ #BSUB -n 1
+ 
+ #BSUB -o out.%J
+ 
+ #BSUB -e err.%J
+
+ module load python
+ 
+ python run.py`
+ 
+ and save it as run.csh. Then to submit the job run the command `bsub < run.csh`.
+ 
+ alternately(not desired) you can directly submit job from command line.
+ 
 `bsub -W 6000 -n 4 -o ./out/out.%J -e ./err/err.%J python run.py _test ant > log/ant.log`
   - "-W 6000" asks for six thousand minutes of time. The job will time out after 100 hours if still running.
   - "-n 4" asks for 4 processors.
